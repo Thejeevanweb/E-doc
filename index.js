@@ -37,6 +37,9 @@ app.use((req, res, next)=>{
 
 
 app.use("/authentication" ,require("./routes/authentication"));
+app.use("/documents" ,require("./routes/documents"));
+app.use("/words" ,require("./routes/words"));
+app.use("/employees" ,require("./routes/employees"));
 
 app.listen(8081 , function (){
     console.log("Edoc project");
